@@ -1,3 +1,42 @@
+## JOURNAL - Dia-4 (07/01/2026)
+
+Hoje eu aprendi a criar lógicas de decisão complexas usando estruturas aninhadas.
+
+### O que eu aprendi:
+
+- **Ifs Aninhados (Nested Ifs)**: Aprendi que posso colocar um ``if`` dentro de outro ``if``. Isso serve para quando uma ação depende de duas condições acontecerem em sequência.
+
+- **Hierarquia de Decisão**: O código só chega no "segundo andar" (o ``if`` de dentro) se ele conseguir passar pela porta do "primeiro andar" (o ``if`` de fora).
+
+- **Identação (Os Espaços)**: Entendi que o Python usa espaços para saber qual ``if`` pertence a qual. Quanto mais profundo o nível da pergunta, mais para a direita o código fica.
+
+- **``Else`` Específico**: Cada ``if`` pode ter o seu próprio ``else``. Isso me permite dar respostas diferentes para erros diferentes (ex: errar o usuário é uma coisa, acertar o usuário mas errar a senha é outra).
+
+### Exemplo de Código que Masterizei:
+
+````
+# Estrutura de Camadas
+if fase_1_concluida == True:
+    print("Passou da primeira fase!")
+    
+    if encontrou_chave == True:
+        print("Você abriu o portal e venceu o jogo! 🏆")
+    else:
+        print("Você chegou ao portal, mas não tem a chave. 🔑")
+        
+else:
+    print("Você ainda está na fase 1. Continue tentando!")
+````
+
+### Meu Progresso:
+
+[x] Entender o ``if`` simples.
+
+[x] Entender o ``else``.
+
+[x] Dominar o ``if`` dentro de ``if`` (Aninhamento).
+
+
 ## JOURNAL - Dia 3
 
 ### Módulo: Lógica de Decisão e Interatividade
@@ -58,7 +97,7 @@ Configurar o ambiente de desenvolvimento (IDE) para seguir padrões profissionai
 
 ### Código do Dia:
 
-´´´´
+````
 # Noach - Aprendendo a interagir com o usuário
 nome = input("Digite seu nome de desenvolvedor: ")
 ferramenta = "VS Code"
@@ -66,7 +105,7 @@ ferramenta = "VS Code"
 # O uso de f-strings torna o código muito mais limpo
 print(f"Dia 2 concluído por {nome}!")
 print(f"Ambiente configurado com {ferramenta} seguindo padrões profissionais.")
-´´´´
+````
 
 ### O que aprendi (Resumo Crítico):
 
