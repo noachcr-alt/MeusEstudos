@@ -1,3 +1,83 @@
+## JOURNAL - DIA 5 (18/01/26): A Arte de Encapsular Lógica
+
+### Visão Geral
+
+O dia de hoje foi focado em transformar código "solto" em ferramentas reutilizáveis. Saímos da execução linear para a execução modular, utilizando funções em Python para organizar lógicas de decisão complexas.
+
+### 1. Variáveis: As Caixas de Memória
+
+Antes de processar, precisamos armazenar. Reforcei o uso de diferentes tipos de dados para dar inteligência ao Noach:
+
+- **Inteiros (``int``)**: Usados para dados quantitativos, como ``horario_atual`` ou ``quantidade_estoque``.
+
+- **Booleanos (``bool``)**: O coração da lógica de decisão (``True`` ou ``False``). Essencial para flags de segurança como ``possui_cracha``.
+
+- **Strings (``str``)**: Para identificação, como ``nome_motorista``.
+
+### 2. Funções (``def``): Criando Minhas Próprias Máquinas
+
+Aprendi que uma função é como uma receita de bolo guardada em uma gaveta: ela não faz nada sozinha até que você a chame pelo nome.
+
+- **Palavra-chave ``def``**: Abre o portal de criação da função.
+
+- **Identação**: O "recuo" do código não é apenas estética no Python, é o que diz o que está dentro e o que está fora da função.
+
+- **Chamada de Função**: O ato de invocar o comando usando ``nome_da_funcao()``.
+
+### 3. Parâmetros: As Entradas da Máquina
+
+Entendi que funções podem ser estáticas (fazem sempre a mesma coisa) ou dinâmicas (recebem dados para trabalhar).
+
+- Os **Parâmetros** são as variáveis que colocamos dentro dos parênteses ``def verificar(parametro):``.
+
+- Eles permitem que a mesma lógica seja aplicada a diferentes motoristas, produtos ou horários sem precisar reescrever o código.
+
+### 4. Lógica de Decisão Profunda (Ifs Aninhados)
+
+Consolidei a técnica de colocar um ``if`` dentro de outro ``if``, criando um funil de segurança:
+
+- **Primeira Camada (Filtro Externo)**: Verifica uma condição macro (Ex: O galpão está aberto?).
+
+- **Segunda Camada (Filtro Interno)**: Se a primeira for verdadeira, verifica um detalhe micro (Ex: O motorista tem autorização?).
+
+- **Else Específico**: Aprendi que cada "porta" (``if``) pode ter seu próprio "segurança" (``else``) para explicar exatamente por que o acesso foi negado.
+
+### Exemplo de Código Masterizado (Python)
+
+````
+# Criando a função com parâmetros (entrada de dados)
+def sistema_noach(nome, horario, cracha):
+    print(f"Verificando entrada de: {nome}")
+    
+    # Camada 1: Horário
+    if horario < 18:
+        # Camada 2: Autorização (Aninhamento)
+        if cracha == True:
+            print("ACESSO LIBERADO. Bem-vindo ao estoque!")
+        else:
+            print("ACESSO NEGADO. Motivo: Falta de crachá.")
+    else:
+        print("ACESSO NEGADO. Motivo: Fora do horário comercial.")
+
+# Testando a máquina
+sistema_noach("Noach", 15, True)
+````
+
+### Checkpoint de Progresso
+
+[x] Entender a anatomia de uma função com ``def``.
+
+[x] Compreender que variáveis dentro da função são locais.
+
+[x] Masterizar o fluxo de ``if`` aninhado para validações em etapas.
+
+[x] Entender como parâmetros tornam o código flexível.
+
+### O Próximo Passo
+
+Com a lógica de funções e decisões dominada, o Noach está pronto para aprender sobre **Retornos (``return``)** — como fazer a função não apenas imprimir algo, mas "devolver" um resultado para ser usado em outras partes do sistema.
+
+
 ## JOURNAL - Dia-4 (07/01/2026)
 
 Hoje eu aprendi a criar lógicas de decisão complexas usando estruturas aninhadas.
